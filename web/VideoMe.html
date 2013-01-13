@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VideoMe</title>
+    <link rel="stylesheet" href="VideoMe.css">
+    <script type="text/javascript" src="js/jwplayer/jwplayer.js"></script>
+    <script>jwplayer.key="sdGn65S/UJ0x5B9KWgj7UkCwrlfPqXPI3OvBxw=="</script>
+  </head>
+  <body>
+    <h1>VideoMe</h1>
+    
+    <p>Hello world from Dart!</p>
+    
+    <div id="container">
+      <div id="myElement">Loading the player...</div>
+      
+      <script type="text/javascript">
+          jwplayer("myElement").setup({
+              file: "uploads/Hotted.mp4",
+              image: "uploads/logo_header.png",
+          });
+      </script>
+      <ul>
+        <li onclick='jwplayer().play()'>Start playback</li>
+        <li onclick='jwplayer().pause()'>Pause playback</li>
+        <li onclick='jwplayer().seek(60)'>Seek playback</li>
+        <li onclick='alert(jwplayer().getVolume())'>Get audio volume</li>
+      </ul>
+    </div>
+    <div id="container">
+      <textarea id="connectedUsers" rows="10" columns="2000" disabled></textarea>
+      Name:&nbsp;<input id="userName" type="text"></input>
+      <button id="connectMe">Connect me</button>
+    </div>
+
+    <script type="application/dart" src="VideoMe.dart"></script>
+    <script src="https://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"></script>
+  </body>
+</html>
