@@ -15,10 +15,9 @@
     
     <div id="container">
       <div id="myElement">Loading the player...</div>
-      
+      <!-- file: "uploads/Hotted.mp4", -->
       <script type="text/javascript">
-          jwplayer("myElement").setup({
-              file: "uploads/Hotted.mp4",
+          jwplayer("myElement").setup({              
               image: "uploads/logo_header.png",
           });
       </script>
@@ -30,12 +29,16 @@
       </ul>
     </div>
     <div id="container">
-      <textarea id="connectedUsers" rows="10" columns="2000" disabled></textarea>
+      <textarea id="connectedUsers" rows="10" columns="200" disabled></textarea>
       Name:&nbsp;<input id="userName" type="text"></input>
       <button id="connectMe">Connect me</button>
     </div>
+    
+    <div id="container">
+      <textarea id="serverResponse" rows="20" columns="200" disabled></textarea>
+    </div>
 
     <script type="application/dart" src="VideoMe.dart"></script>
-    <script src="https://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"></script>
+    <script src="packages/browser/dart.js"></script>
   </body>
 </html>

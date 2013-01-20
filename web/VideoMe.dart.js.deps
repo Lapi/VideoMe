@@ -79,3 +79,6 @@ file:///C:/Program Files (x86)/dart/dart-sdk/lib/utf/utf_core.dart
 file:///C:/Program Files (x86)/dart/dart-sdk/lib/web_audio/dart2js/web_audio_dart2js.dart
 file:///C:/Source/Websites/VideoMe/web/VideoMe.dart
 file:///C:/Source/Websites/VideoMe/web/applib/ServerConnection.dart
+file:///C:/Source/Websites/VideoMe/web/applib/View.dart
+file:///C:/Source/Websites/VideoMe/web/applib/controls/ConnectedUsersControl.dart
+file:///C:/Source/Websites/VideoMe/web/applib/controls/ServerResponseWindow.dart
